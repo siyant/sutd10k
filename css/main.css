@@ -32,3 +32,13 @@ html, body {
     max-width: 980px;
     margin: 0 auto;
 }
+
+.padd-10 {
+    padding: 10px;
+}
+
+p.emphasis {
+    color: #01c1c1;
+    font-size:18px;
+    font-weight:normal;
+}

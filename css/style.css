@@ -14,7 +14,7 @@ input,
 select,
 textarea { 
 	font-family: Lato, "Open Sans", sans-serif;
-	color: #808080; 
+	color: #606060; 
 	margin: 0; 
 	font-size: 16px; 
 	line-height: 25px;
@@ -51,7 +51,7 @@ p {
 	font-size: 16px; 
 	line-height: 25px;
 	font-weight: 300;
-	color: #808080;
+	color: #606060;
 }
 a { 
 	text-decoration: none;
@@ -689,7 +689,7 @@ button.btn .fa { width: 25px; }
 /*single box left*/
 .single_box_right { margin: 10px 10px 23px 60px; padding: 0px 20px 0; }
 .single_box_right ul li [class^="fa"] { position: relative; font-size: 15px; display: inline-block; color: #808080; }
-.single_box_right h3 { margin: 0 0 10px; font-size: 22px; }
+.single_box_right h3 { margin: 0 0 10px; font-size: 18px; }
 .single_box_right h3 a { color:#e16657;}
 .single_box_right h3 a:hover { color:#e16657;}
 .left_icons{
