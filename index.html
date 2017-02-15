@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	
     <title>SUTD 10k Competition</title>
     <meta charset="utf-8">
     <meta name="description" content="Piksell Responsive Multipurpose Template">
     <meta name="author" content="Diamant Gjota" />
     <meta name="keywords" content="piksell, html5, css3, template, bootstrap" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -43,27 +44,38 @@
     <![endif]-->
     
 </head>
-		
+	
 <body id="top">
     
     <!-- heaqder -->
-    <header class="home section-parallax parallaxBg" style="background-image: url(img/home_01.jpg);">
+    <header class="home section-parallax parallaxBg" style="background-image: url(img/lightbulb.jpg);">
     	<div class="layer"></div>
     	<div class="container parallax-content">
         	<div class="row">
             	<div class="col-sm-12">
                     <img src="img/logo/10k_white.png" style="max-width:45%">
 					<p></p>
-                    <a href="#" class="btn pi-btn-default btn-xlg btn-border">Learn More</a>
-                    <a href="#" class="btn pi-btn-default btn-xlg">Register</a>
+					<div id= "sidney" ></div>
+                    <a href="#" class="btn pi-btn-default btn-xlg btn-border" onmouseenter = "sidney()" onmouseout = "notsidney()">Learn More</a>
+                    <a href="#" class="btn pi-btn-default btn-xlg btn-border">Register</a>
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
     </header>
+	<script>
+	function sidney(){
+	document.getElementById("sidney").style.opacity = 0;
+	}
+	function notsidney(){
+	document.getElementById("sidney").style.opacity = 1;
+	}
+	</script>
+	
     <!-- end header -->
     
     <!-- start Navigation -->
     <nav class="navbar navbar-default" role="navigation">
+	<a name="about_us"></a>	
       <div class="container">
         <!-- Zetta Menu -->
         <ul id="nav" onClick="" class="zetta-menu zm-response-switch zm-full-width zm-effect-slide-top">
@@ -71,29 +83,31 @@
             <li class="zm-logo">
                 <a href="#top"><img src="img/logo/textonly.png" alt="SUTD 10k logo" style="height: 50px;"/></a>
             </li>
+			 
             <!-- end LOGO -->
-            <li class="nav"><a href="#about-us" data-scroll="about-us">About</a></li>
-            <li class="nav"><a href="#" data-scroll="services">Timeline</a></li>
-            <li class="nav"><a href="#" data-scroll="team">Requirements</a></li>
-            <li class="nav"><a href="#" data-scroll="portfolio">Rules</a></li>
-            <li class="nav"><a href="#" data-scroll="contact">Contact</a></li>
-    
-            <!-- Search Place -->
+            <li class="nav"><a href="#about_us" data-scroll="about-us">About</a></li>
+            <li class="nav"><a href="#Timeline" data-scroll="services">Timeline</a></li>
+            <li class="nav"><a href="#Requirements" data-scroll="team">Requirements</a></li>
+            <li class="nav"><a href="#Rules" data-scroll="portfolio">Rules</a></li>
+            <li class="nav"><a href="#Contact" data-scroll="contact">Contact</a></li>
+			<!-- Search Place -->
+			<!--
             <li class="zm-search zm-right-item">
                 <form>
                     <input id="search-1" name="search" type="search">
                     <label for="search-1" class="fa fa-search"></label>
                 </form>
             </li>
+			//-->
             <!-- /Search Place -->
         </ul>
         <!-- /Zetta Menu 1 -->
       </div><!-- /.container-fluid -->
     </nav>
     <!-- end nav -->
-    
+   
     <!-- about -->
-    <section id="about-us" data-anchor="about-us" class="content">
+    <section id="about-us" class="content">
     	<div class="container what-we-do">
         	<div class="row">
             	<h3 class="text-center padd">SUTD's premier student-run business competition.</h3>
@@ -143,18 +157,20 @@
         </div><!-- end of container -->
     </section>
     <!-- about -->
-    
-    
+    <a name = "Timeline"></a>
+    <!-- img/contact-section-bg.jpg>
     <!-- timeline image parallax -->
-    <section class="content-2 section-parallax parallaxBg-4" style="background-image: url(img/contact-section-bg.jpg);">
+    <section class="content-2 section-parallax parallaxBg-4" style="background-image: url(img/Galaxy.jpg);">
         <div class="layer"></div>
         <div class="container parallax-content">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="padd text-center">
+					
                         <h3 class="padd">Timeline</h3>
+						
                         <div class="line"></div>
-                        <img src="img/timeline.png">
+                        <img src="img/timeline.svg" style = "max-width: 100%">
                     </div>
                 </div>
             </div><!-- end row -->
@@ -162,9 +178,9 @@
     </section>
     <!-- end timeline image parallax -->
 
-
+	<a name = "Requirements"></a>
     <!-- first round -->
-    <section class="content-2 section-grey">
+    <section class="content-2 section-grey" >
         <div class="container">
             <div class="row">
                 <h1 class="text-center">Requirements</h1>
@@ -177,7 +193,7 @@
                 <div class="col-md-8 col-md-offset-2">
                     <p class="emphasis">The executive summary should be about <strong>3 pages long</strong> and be split into ten sections: </p>
                     <ol>                
-                        <li class="wow fadeInUp" data-wow-duration="0s">Company name</li>
+                        <li class="wow fadeInUp" data-wow-duration="0s" >Company name</li>
                         <li class="wow fadeInUp" data-wow-duration="0.2s">Team members (First Name, Last Name, email address, affiliation with SUTD)</li>
                         <li class="wow fadeInUp" data-wow-duration="0.4s">Summarize the market and potential creation and capture of value. This should be your elevator pitch. (500 characters with spaces)</li>
                         <li class="wow fadeInUp" data-wow-duration="0.6s">Describe the problem and market you are addressing. (1000 characters with spaces)</li>
@@ -188,6 +204,8 @@
                         <li class="wow fadeInUp" data-wow-duration="1.6s">What actions or steps will you take to engage with customers and optimize the product-market fit in the next 3-6 months? (1000 characters with spaces)</li>
                         <li class="wow fadeInUp" data-wow-duration="1.8s">Optional additional 3 A4 pages of material (PDF upload) to be considered by judges.</li>
                     </ol><br><br>
+					
+				
 
                     <p class="emphasis">Each application will be reviewed by 3-5 outside judges, who will rank applications on three criteria: </p>
                     <ul class="list3">                
@@ -199,6 +217,7 @@
                 
             </div><!-- end row -->
         </div><!-- end container -->
+		
     </section>
     <!-- end first round -->
     
